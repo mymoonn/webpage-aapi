@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+
+.some-page-wrapper {
+  margin: 15px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.blue-column1 {
+ background-color: white;
+  height: 500px;
+  text-align: left;
+  justify-content: left;
+}
+
+.green-column1 {
+  background-color: white;
+    height: 500px;
+    
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  text-align: center;
+  font-size: medium;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  width: 230px;
+  height: 215;
+  
+  padding: 4px;
+  font:small;
+  text-align: center;
+  background-color:#f1f1f1;
+  margin: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; 
+  }
+  .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+      background-color: #fff;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        column-gap: 40px;
+        
+
+      }
+    }
+    .text-align{
+      width: 50px;
+  height: 50px;
+  
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;}
+  
+  
